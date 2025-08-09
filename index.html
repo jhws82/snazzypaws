@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snazzy Paws Grooming - Home</title>
+    <!-- Link to the minified external CSS file for styling -->
+    <link rel="stylesheet" href="styles/style.min.css">
+    <!-- Preconnect to Google Fonts for Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" crossorigin href="https://fonts.gstatic.com">
+    <!-- Import Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section containing the site title and navigation -->
+    <header class="site-header">
+        <div class="container">
+            <!-- Site logo or title with ARIA label for accessibility -->
+            <a href="index.html" class="site-logo" aria-label="Snazzy Paws Grooming Home">Snazzy Paws Grooming</a>
+            
+            <!-- Hidden checkbox for CSS-only hamburger menu toggle -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-controls="main-navigation-menu" aria-expanded="false">
+            <!-- Label acts as the hamburger icon, toggling the checkbox -->
+            <label for="menu-toggle" class="hamburger-menu" aria-label="Open main menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation menu for main site sections -->
+            <nav class="main-nav" id="main-navigation-menu" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area of the page -->
+    <main>
+        <!-- Hero section with a background image and call to action -->
+        <section class="hero-section" role="banner" aria-label="Welcome to Snazzy Paws Grooming">
+            <div class="hero-content">
+                <h1>Snazzy Paws: Where Every Pet Shines!</h1>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+        </section>
+
+        <!-- About Us section providing a brief introduction -->
+        <section class="about-us-section" aria-labelledby="about-us-heading">
+            <div class="container">
+                <h2 id="about-us-heading">About Snazzy Paws Grooming</h2>
+                <p>At Snazzy Paws Grooming, we're passionate about providing top-notch grooming services for your beloved canine companions. Started by a couple who adore dogs, our mission is to offer professional, compassionate care that leaves your pet looking and feeling their best. We serve Hamilton locals and pet owners in the wider community, ensuring every dog receives the individual attention they deserve.</p>
+                <a href="contact.html" class="btn btn-secondary">Read More About Us</a>
+            </div>
+        </section>
+
+        <!-- Featured Services section highlighting popular grooming packages -->
+        <section class="featured-services-section" aria-labelledby="featured-services-heading">
+            <div class="container">
+                <h2 id="featured-services-heading">Our Featured Services</h2>
+                <div class="service-cards">
+                    <!-- Service Card 1: Bath and Brush -->
+                    <div class="service-card">
+                        <img src="https://placehold.co/300x200/ADD8E6/000?text=Bath+&+Brush" alt="Dog enjoying a bath and brush" class="service-image">
+                        <h3>Bath and Brush</h3>
+                        <p>Shampoo, blow-dry, brush-out and nail trim.</p>
+                        <span class="price-range">$25 – $50</span>
+                    </div>
+                    <!-- Service Card 2: Haircut -->
+                    <div class="service-card">
+                        <img src="https://placehold.co/300x200/90EE90/000?text=Haircut" alt="Dog with a fresh haircut" class="service-image">
+                        <h3>Haircut</h3>
+                        <p>Bath, blow-dry, haircut (breed standard or owner's preference) and nail trim.</p>
+                        <span class="price-range">$45 – $85</span>
+                    </div>
+                    <!-- Service Card 3: Spa Package -->
+                    <div class="service-card">
+                        <img src="https://placehold.co/300x200/FFD700/000?text=Spa+Package" alt="Relaxed dog enjoying a spa treatment" class="service-image">
+                        <h3>Spa Package</h3>
+                        <p>Bath, haircut, teeth brushing, nail trim and sometimes special scents or conditioners.</p>
+                        <span class="price-range">$75 – $150</span>
+                    </div>
+                </div>
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </section>
+
+        <!-- Testimonials section showcasing customer reviews -->
+        <section class="testimonials-section" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <h2 id="testimonials-heading">What Our Happy Customers Say!</h2>
+                <div class="testimonial-carousel" role="region" aria-live="polite">
+                    <div class="testimonial-item">
+                        <p>"Snazzy Paws always makes my poodle look fabulous! The team is so gentle and caring."</p>
+                        <cite>— Margaret S.</cite>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"Buddy loves coming here! He always leaves happy and smelling great. Highly recommend!"</p>
+                        <cite>— Sarah L.</cite>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"Professional service and excellent results every time. My dog's coat has never looked better."</p>
+                        <cite>— John D.</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section containing site information and opening hours -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="site-logo" aria-label="Snazzy Paws Grooming Home">Snazzy Paws Grooming</a>
+                    <p>Professional dog grooming services based in Hamilton, New Zealand.</p>
+                </div>
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <p>Monday - Saturday: 9 am - 5 pm</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>45 Grooming Road, Hamilton, Waikato 3204, New Zealand</p>
+                    <p>Phone: <a href="tel:+6478391234">(07) 839 1234</a></p>
+                    <p>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><img src="https://placehold.co/30x30/CCCCCC/000?text=FB" alt="Facebook icon"></a>
+                        <a href="#" aria-label="Instagram"><img src="https://placehold.co/30x30/CCCCCC/000?text=IG" alt="Instagram icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Snazzy Paws Grooming. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

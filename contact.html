@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snazzy Paws Grooming - Contact Us</title>
+    <!-- Link to the minified external CSS file for styling -->
+    <link rel="stylesheet" href="styles/style.min.css">
+    <!-- Preconnect to Google Fonts for Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" crossorigin href="https://fonts.gstatic.com">
+    <!-- Import Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section containing the site title and navigation -->
+    <header class="site-header">
+        <div class="container">
+            <!-- Site logo or title with ARIA label for accessibility -->
+            <a href="index.html" class="site-logo" aria-label="Snazzy Paws Grooming Home">Snazzy Paws Grooming</a>
+            
+            <!-- Hidden checkbox for CSS-only hamburger menu toggle -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-controls="main-navigation-menu" aria-expanded="false">
+            <!-- Label acts as the hamburger icon, toggling the checkbox -->
+            <label for="menu-toggle" class="hamburger-menu" aria-label="Open main menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation menu for main site sections -->
+            <nav class="main-nav" id="main-navigation-menu" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area of the page -->
+    <main>
+        <!-- Contact Us section -->
+        <section class="contact-us-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h1 id="contact-heading">Get in Touch with Snazzy Paws</h1>
+                <p>We'd love to hear from you! Whether you have a question about our services, need to book an appointment, or just want to say hello, feel free to reach out.</p>
+
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p><strong>Address:</strong> 45 Grooming Road, Hamilton, Waikato 3204, New Zealand</p>
+                        <p><strong>Phone:</strong> <a href="tel:+6478391234">(07) 839 1234</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></p>
+                        <h3>Opening Hours</h3>
+                        <p>Monday - Saturday: 9 am - 5 pm</p>
+                        <p>Sunday: Closed</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><img src="https://placehold.co/30x30/CCCCCC/000?text=FB" alt="Facebook icon"></a>
+                            <a href="#" aria-label="Instagram"><img src="https://placehold.co/30x30/CCCCCC/000?text=IG" alt="Instagram icon"></a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h2>Send Us a Message</h2>
+                        <p class="form-intro-text">Please provide your details and message below. Fields marked with an asterisk (<span class="required-star">*</span>) are required.</p>
+                        <form class="contact-form" action="#" method="post" aria-label="Contact us form">
+                            <div class="form-group">
+                                <label for="name">Your Name <span class="required-star">*</span></label>
+                                <input type="text" id="name" name="name" required aria-required="true" placeholder="e.g., Jane Doe" title="Please enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email Address <span class="required-star">*</span></label>
+                                <input type="email" id="email" name="email" required aria-required="true" placeholder="e.g., jane.doe@example.com" title="Please enter a valid email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="e.g., 021 123 4567" title="Optional: Enter your phone number (e.g., New Zealand mobile format)">
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Your Message <span class="required-star">*</span></label>
+                                <textarea id="comment" name="comment" rows="5" required aria-required="true" placeholder="e.g., I have a question about your puppy package..." title="Please enter your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Embedded Google Map -->
+        <section class="map-section" aria-labelledby="map-heading">
+            <div class="container">
+                <h2 id="map-heading">Find Our Location</h2>
+                <div class="map-container">
+                    <!-- Google Maps embed code for Hamilton, New Zealand -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.6019!2d175.2796!3d-37.7870!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d2d2301f2f2f2f1%3A0x500ef6143a2990!2sHamilton%2C%20Waikato!5e0!3m2!1sen!2snz!4v1678888888888!5m2!1sen!2snz"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Google Maps location of Snazzy Paws Grooming in Hamilton, New Zealand"
+                        aria-label="Location of Snazzy Paws Grooming on Google Maps">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Local Partners Directory -->
+        <section class="local-partners-section" aria-labelledby="partners-heading">
+            <div class="container">
+                <h2 id="partners-heading">Our Trusted Local Partners</h2>
+                <p>We believe in supporting our local community. Here are some of our recommended local pet shops and veterinarians:</p>
+                <div class="partners-grid">
+                    <div class="partner-category">
+                        <h3>Local Pet Shops</h3>
+                        <ul>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer">Paws & Play Pet Shop <span class="sr-only">(opens in new tab)</span></a></li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer">Healthy Hounds Supplies <span class="sr-only">(opens in new tab)</span></a></li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer">The Pet Emporium <span class="sr-only">(opens in new tab)</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="partner-category">
+                        <h3>Local Veterinarians</h3>
+                        <ul>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer">Animal Health Clinic <span class="sr-only">(opens in new tab)</span></a></li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer">Hamilton Vet Hospital <span class="sr-only">(opens in new tab)</span></a></li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer">Companion Animal Care <span class="sr-only">(opens in new tab)</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section containing site information and opening hours -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="site-logo" aria-label="Snazzy Paws Grooming Home">Snazzy Paws Grooming</a>
+                    <p>Professional dog grooming services based in Hamilton, New Zealand.</p>
+                </div>
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <p>Monday - Saturday: 9 am - 5 pm</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>45 Grooming Road, Hamilton, Waikato 3204, New Zealand</p>
+                    <p>Phone: <a href="tel:+6478391234">(07) 839 1234</a></p>
+                    <p>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><img src="https://placehold.co/30x30/CCCCCC/000?text=FB" alt="Facebook icon"></a>
+                        <a href="#" aria-label="Instagram"><img src="https://placehold.co/30x30/CCCCCC/000?text=IG" alt="Instagram icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Snazzy Paws Grooming. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

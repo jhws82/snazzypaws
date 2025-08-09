@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snazzy Paws Grooming - Gallery</title>
+    <!-- Link to the minified external CSS file for styling -->
+    <link rel="stylesheet" href="styles/style.min.css">
+    <!-- Preconnect to Google Fonts for Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" crossorigin href="https://fonts.gstatic.com">
+    <!-- Import Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section containing the site title and navigation -->
+    <header class="site-header">
+        <div class="container">
+            <!-- Site logo or title with ARIA label for accessibility -->
+            <a href="index.html" class="site-logo" aria-label="Snazzy Paws Grooming Home">Snazzy Paws Grooming</a>
+            
+            <!-- Hidden checkbox for CSS-only hamburger menu toggle -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-controls="main-navigation-menu" aria-expanded="false">
+            <!-- Label acts as the hamburger icon, toggling the checkbox -->
+            <label for="menu-toggle" class="hamburger-menu" aria-label="Open main menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation menu for main site sections -->
+            <nav class="main-nav" id="main-navigation-menu" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area of the page -->
+    <main>
+        <!-- Gallery section with images and filters -->
+        <section class="gallery-section" aria-labelledby="gallery-heading">
+            <div class="container">
+                <h1 id="gallery-heading">See Our Happy Clients!</h1>
+                <p>Browse through our collection of adorable before & after photos and see the Snazzy Paws difference!</p>
+
+                <!-- Image filter options (visual only, no dynamic filtering without JS) -->
+                <div class="gallery-filters" role="group" aria-label="Filter gallery images">
+                    <button class="filter-btn active" aria-pressed="true">All</button>
+                    <button class="filter-btn" aria-pressed="false">Breeds</button>
+                    <button class="filter-btn" aria-pressed="false">Cuts</button>
+                    <button class="filter-btn" aria-pressed="false">Services</button>
+                    <button class="filter-btn" aria-pressed="false">Videos</button>
+                </div>
+
+                <!-- 4x4 Image Grid -->
+                <div class="image-grid">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+1" alt="Before and after grooming of a fluffy white dog" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+2" alt="A happy golden retriever after a bath" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+3" alt="A small terrier with a neat new haircut" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+4" alt="A playful spaniel before and after a de-shedding treatment" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+5" alt="A poodle showing off a fancy show cut" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+6" alt="A shih tzu with perfectly trimmed face" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+7" alt="A border collie looking smart after grooming" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+8" alt="A cute puppy getting its first gentle groom" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+9" alt="A scruffy dog transformed into a tidy pet" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+10" alt="A dog with clean ears and bright eyes" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+11" alt="A large dog enjoying a medicated bath" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+12" alt="A dog with freshly trimmed nails" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+13" alt="A happy dog after a spa day" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+14" alt="A dog with a stylish summer cut" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+15" alt="A dog looking pampered and relaxed" tabindex="0">
+                    <img src="https://placehold.co/300x300/F0F8FF/000?text=Dog+16" alt="A dog ready for a walk after grooming" tabindex="0">
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Showcase section -->
+        <section class="video-showcase-section" aria-labelledby="video-showcase-heading">
+            <div class="container">
+                <h2 id="video-showcase-heading">Behind the Scenes & Happy Tails</h2>
+                <p>Watch our expert groomers in action and see how we make every pet's visit a positive experience.</p>
+                <div class="video-grid">
+                    <!-- Embedded Video Player 1 -->
+                    <div class="video-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>A quick look at our gentle bathing process.</p>
+                    </div>
+                    <!-- Embedded Video Player 2 -->
+                    <div class="video-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/oHg5SJYRHA0" title="YouTube video player 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>See how we achieve those perfect haircuts!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action section -->
+        <section class="cta-section" aria-labelledby="cta-heading">
+            <div class="container">
+                <h2 id="cta-heading">Ready for Your Pet's Transformation?</h2>
+                <a href="booking.html" class="btn btn-primary btn-large">Book Now!</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section containing site information and opening hours -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="site-logo" aria-label="Snazzy Paws Grooming Home">Snazzy Paws Grooming</a>
+                    <p>Professional dog grooming services based in Hamilton, New Zealand.</p>
+                </div>
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <p>Monday - Saturday: 9 am - 5 pm</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>45 Grooming Road, Hamilton, Waikato 3204, New Zealand</p>
+                    <p>Phone: <a href="tel:+6478391234">(07) 839 1234</a></p>
+                    <p>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><img src="https://placehold.co/30x30/CCCCCC/000?text=FB" alt="Facebook icon"></a>
+                        <a href="#" aria-label="Instagram"><img src="https://placehold.co/30x30/CCCCCC/000?text=IG" alt="Instagram icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Snazzy Paws Grooming. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
