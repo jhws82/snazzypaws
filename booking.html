@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snazzy Paws Grooming - Booking</title>
     <!-- Link to the minified external CSS file for styling -->
-    <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="stylesheet" href="style.min.css">
     <!-- Preconnect to Google Fonts for Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" crossorigin href="https://fonts.gstatic.com">
@@ -109,7 +109,7 @@
                         <label for="additional-notes">Additional Notes/Requests</label>
                         <textarea id="additional-notes" name="additionalNotes" rows="5" placeholder="e.g., Buddy is a bit shy around new people." title="Optional: Add any special notes or requests"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-submit">Submit Booking Request</button>
+                    <button type="submit" class="btn btn-primary btn-submit">Purchase Voucher</button>
                 </form>
             </div>
         </section>
@@ -147,7 +147,7 @@
                         <label for="sender-email">Your Email <span class="required-star">*</span></label>
                         <input type="email" id="sender-email" name="senderEmail" required aria-required="true" placeholder="e.g., emily.chen@example.com" title="Please enter your email address">
                     </div>
-                    <div class="payment-integration" aria-label="Payment gateway options">
+                    <div class="payment-integration">
                         <p>Secure payment via:</p>
                         <img src="https://placehold.co/100x40/E0E0E0/000?text=Stripe" alt="Stripe payment gateway logo">
                         <img src="https://placehold.co/100x40/E0E0E0/000?text=PayPal" alt="PayPal payment gateway logo">
@@ -164,7 +164,7 @@
                 <div class="accordion">
                     <!-- Accordion Item 1 -->
                     <div class="accordion-item">
-                        <input type="checkbox" id="accordion-toggle-1" class="accordion-toggle" aria-controls="accordion-content-1" aria-expanded="false">
+                        <input type="checkbox" id="accordion-toggle-1" class="accordion-toggle" aria-controls="accordion-content-1" aria-expanded="false" role="button" aria-pressed="true">
                         <label for="accordion-toggle-1" class="accordion-header">Cancellation Policy</label>
                         <div id="accordion-content-1" class="accordion-content" role="region" aria-labelledby="accordion-toggle-1">
                             <p>We kindly request at least 24 hours' notice for any cancellations or rescheduling. Cancellations made less than 24 hours in advance may incur a fee.</p>
@@ -172,7 +172,7 @@
                     </div>
                     <!-- Accordion Item 2 -->
                     <div class="accordion-item">
-                        <input type="checkbox" id="accordion-toggle-2" class="accordion-toggle" aria-controls="accordion-content-2" aria-expanded="false">
+                        <input type="checkbox" id="accordion-toggle-2" class="accordion-toggle" aria-controls="accordion-content-2" aria-expanded="false" role="button" aria-pressed="true">
                         <label for="accordion-toggle-2" class="accordion-header">What to expect on arrival?</label>
                         <div id="accordion-content-2" class="accordion-content" role="region" aria-labelledby="accordion-toggle-2">
                             <p>Please arrive on time for your appointment. We will discuss your pet's needs and any specific requests you have before starting the grooming process.</p>
@@ -180,7 +180,7 @@
                     </div>
                     <!-- Accordion Item 3 -->
                     <div class="accordion-item">
-                        <input type="checkbox" id="accordion-toggle-3" class="accordion-toggle" aria-controls="accordion-content-3" aria-expanded="false">
+                        <input type="checkbox" id="accordion-toggle-3" class="accordion-toggle" aria-controls="accordion-content-3" aria-expanded="false" role="button" aria-pressed="true">
                         <label for="accordion-toggle-3" class="accordion-header">Do you groom all breeds?</label>
                         <div id="accordion-content-3" class="accordion-content" role="region" aria-labelledby="accordion-toggle-3">
                             <p>Yes, we are experienced in grooming a wide variety of dog breeds. For very specific or complex cuts, we recommend a consultation first.</p>
@@ -202,7 +202,6 @@
                 <div class="footer-hours">
                     <h4>Opening Hours</h4>
                     <p>Monday - Saturday: 9 am - 5 pm</p>
-                    <p>Sunday: Closed</p>
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
